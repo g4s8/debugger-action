@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: '20'
     - name: Run a one-line script
       uses: g4s8/debugger-action@master
       with:
